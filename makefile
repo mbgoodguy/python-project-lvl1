@@ -1,8 +1,8 @@
 install:
-	poetry-install
+	poetry install
 
 build:
-	poetry-build
+	poetry build
 
 publish:
 	poetry publish --dry-run
