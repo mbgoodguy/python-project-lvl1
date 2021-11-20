@@ -3,4 +3,5 @@
 
 [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability)
 
-![Linter-check](https://github.com/mbgoodguy/python-project-lvl1/.github/workflows/flake8.yml/badge.svg)
+![example workflow](https://github.com/mbgoodguy/python-project-lvl1/actions/workflows/flake8.yml/badge.svg)
+
