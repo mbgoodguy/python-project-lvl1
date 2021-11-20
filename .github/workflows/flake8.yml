@@ -1,10 +1,18 @@
-name: linter-test
-on: push
+name: flake8-test
+
+on:
+  - push
+  - pull_request
+
 jobs:
-  linter-test:
+  flake8-test:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: linter-test
         run: |
-           pip install poetry
-           make linter
+          pip install poetry
+          make install
+      - name: linter-check
+        run: |
+          make lint
