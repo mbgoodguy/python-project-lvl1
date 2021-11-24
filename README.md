@@ -5,5 +5,5 @@
 
 ![example workflow](https://github.com/mbgoodguy/python-project-lvl1/actions/workflows/flake8.yml/badge.svg)
 
-![Asciinema]: (https://asciinema.org/a/UmxlAMPKJpWtDMB84kDgD7cs9)
+(https://asciinema.org/a/UmxlAMPKJpWtDMB84kDgD7cs9)
 
