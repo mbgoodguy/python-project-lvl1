@@ -17,4 +17,4 @@ brain-even:
 	poetry run brain-even
 
 lint:
-	poetry run flake8 brain_even
+	poetry run flake8 brain_games/scripts/brain_even.py

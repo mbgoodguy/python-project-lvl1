@@ -16,34 +16,6 @@ def main():
     print('Hello, ', name + '!')
     print('Answer "yes" if the number is even, otherwise answer "no".')
 
-    def even_or_odd():
-        question1()
-        if number1 % 2 == 0:
-            yes_answer_check()
-        else:
-            no_answer_check()
-        question2()
-        if number2 % 2 == 0:
-            yes_answer_check()
-        else:
-            no_answer_check()
-        question3()
-        if number3 % 2 == 0:
-            yes_answer_check()
-        else:
-            no_answer_check()
-        print('Congratulations, ', name + '!')
-
-    # question defs
-    def question1():
-        print('Question: ', number1)
-
-    def question2():
-        print('Question: ', number2)
-
-    def question3():
-        print('Question: ', number3)
-
     # answer_defs
     def yes_answer_check():
         answer = prompt.string('Your answer: ')
@@ -63,8 +35,40 @@ def main():
             print('Let''s try again, ', name + '!')
             sys.exit()
 
+    # question defs
+    def question1():
+        print('Question: ', number1)
+        if number1 % 2 == 0:
+            yes_answer_check()
+        else:
+            no_answer_check()
+
+    def question2():
+        print('Question: ', number2)
+        if number2 % 2 == 0:
+            yes_answer_check()
+        else:
+            no_answer_check()
+
+    def question3():
+        print('Question: ', number3)
+        if number3 % 2 == 0:
+            yes_answer_check()
+        else:
+            no_answer_check()
+
+    def even_or_odd():
+        question1()
+        question2()
+        question3()
+        print('Congratulations, ', name + '!')
+
     even_or_odd()
+
+
+main()
 
 
 if __name__ == '__ main__':
     main()
+
