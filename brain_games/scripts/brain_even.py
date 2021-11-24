@@ -10,7 +10,7 @@ number2 = random.randint(1, 20)  # генерация случайного чи�
 number3 = random.randint(1, 20)  # генерация случайного числа 3
 
 
-def main():
+def main():  # noqa: C901
     print('Welcome to the Brain Games!')
     name = prompt.string('May I have your name? ')
     print('Hello, ', name + '!')
