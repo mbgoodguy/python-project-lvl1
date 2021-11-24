@@ -15,7 +15,7 @@ def main():
     name = prompt.string('May I have your name? ')
     print('Hello, ', name + '!')
     print('Answer "yes" if the number is even, otherwise answer "no".')
-    
+
     def even_or_odd():
         question1()
         if number1 % 2 == 0:
@@ -38,34 +38,30 @@ def main():
     def question1():
         print('Question: ', number1)
 
-
     def question2():
         print('Question: ', number2)
 
-
     def question3():
         print('Question: ', number3)
-
 
     # answer_defs
     def yes_answer_check():
         answer = prompt.string('Your answer: ')
         if answer.lower() == yes_answer:  # если пользователь ответил yes
-                print('Correct!')
-        else: 
-                print(f'{no_answer} is wrong answer ;(. Correct answer was {yes_answer}.')
-                print('Let''s try again, ', name + '!')
-                sys.exit()
-
+            print('Correct!')
+        else:
+            print('\'no\' is wrong answer ;(. Correct answer was \'yes\'.')
+            print('Let''s try again, ', name + '!')
+            sys.exit()
 
     def no_answer_check():
         answer = prompt.string('Your answer: ')
         if answer.lower() == no_answer:  # если пользователь ответил no
-                print('Correct!')
+            print('Correct!')
         else:
-                print(f'{yes_answer} is wrong answer ;(. Correct answer was {no_answer}.')
-                print('Let''s try again, ', name + '!')
-                sys.exit()
+            print('\'yes\' is wrong answer ;(. Correct answer was \'no\'.')
+            print('Let''s try again, ', name + '!')
+            sys.exit()
 
     even_or_odd()
 
