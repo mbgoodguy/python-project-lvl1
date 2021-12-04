@@ -64,6 +64,7 @@ def main():  # noqa: C901
         print('Congratulations, ', name + '!')
 
     even_or_odd()
+    sys.exit()
 
 
 main()
