@@ -6,5 +6,6 @@
 ![example workflow](https://github.com/mbgoodguy/python-project-lvl1/actions/workflows/flake8.yml/badge.svg)
 
 Even-or-odd: https://asciinema.org/a/UmxlAMPKJpWtDMB84kDgD7cs9
+
 Calculate: https://asciinema.org/a/ISkgY6EmpCpGQRCdRTZ0yd17U
 
