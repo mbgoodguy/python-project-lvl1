@@ -9,3 +9,5 @@ Even-or-odd: https://asciinema.org/a/UmxlAMPKJpWtDMB84kDgD7cs9
 
 Calculate: https://asciinema.org/a/ISkgY6EmpCpGQRCdRTZ0yd17U
 
+GCD: https://asciinema.org/a/lFlN6ooC6GaQChldmBeVXMpad
+
