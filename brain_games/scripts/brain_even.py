@@ -37,7 +37,7 @@ def congratulate_user(name):
 
 # answer_defs
 def yes_answer_check(answer, name):
-    if answer.lower() == answer:  # если пользователь ответил yes
+    if answer.lower() == 'yes':  # если пользователь ответил yes
         print('Correct!')
     else:
         print('\'no\' is wrong answer ;(. Correct answer was \'yes\'.')
@@ -46,7 +46,7 @@ def yes_answer_check(answer, name):
 
 
 def no_answer_check(answer, name):
-    if answer.lower() == answer:  # если пользователь ответил no
+    if answer.lower() == 'no':  # если пользователь ответил no
         print('Correct!')
     else:
         print('\'yes\' is wrong answer ;(. Correct answer was \'no\'.')
