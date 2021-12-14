@@ -22,7 +22,7 @@ def generate_random_num():
 
 
 def question(num):
-    print('Question: ', num)
+    print('Question:', num)
 
 
 def get_answer():
