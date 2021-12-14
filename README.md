@@ -7,9 +7,10 @@
 
 Even-or-odd: https://asciinema.org/a/UmxlAMPKJpWtDMB84kDgD7cs9
 
-Calculate: https://asciinema.org/a/ISkgY6EmpCpGQRCdRTZ0yd17U
+Brain-calculate: https://asciinema.org/a/ISkgY6EmpCpGQRCdRTZ0yd17U
 
-GCD: https://asciinema.org/a/lFlN6ooC6GaQChldmBeVXMpad
+Brain-GCD: https://asciinema.org/a/lFlN6ooC6GaQChldmBeVXMpad
 
 Brain-progression: https://asciinema.org/a/uRsWvfBZstGwhPIoVS5vgppBu
 
+Brain-prime: https://asciinema.org/a/uWtlen47DsZJcNHjaiG3gnByg
