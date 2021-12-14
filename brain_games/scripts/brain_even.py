@@ -41,7 +41,7 @@ def yes_answer_check(answer, name):
         print('Correct!')
     else:
         print('\'no\' is wrong answer ;(. Correct answer was \'yes\'.')
-        print('Let''s try again, ', name + '!')
+        print(f'Let\'s try again, {name}!')
         sys.exit()
 
 
@@ -50,7 +50,7 @@ def no_answer_check(answer, name):
         print('Correct!')
     else:
         print('\'yes\' is wrong answer ;(. Correct answer was \'no\'.')
-        print('Let''s try again, ', name + '!')
+        print(f'Let\'s try again, {name}!')
         sys.exit()
 
 
