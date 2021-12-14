@@ -36,21 +36,21 @@ def main():  # noqa: C901
             sys.exit()
 
     # question defs
-    def question1():
+    def question1(number1):
         print('Question: ', number1)
         if number1 % 2 == 0:
             yes_answer_check()
         else:
             no_answer_check()
 
-    def question2():
+    def question2(number2):
         print('Question: ', number2)
         if number2 % 2 == 0:
             yes_answer_check()
         else:
             no_answer_check()
 
-    def question3():
+    def question3(number3):
         print('Question: ', number3)
         if number3 % 2 == 0:
             yes_answer_check()
@@ -58,9 +58,9 @@ def main():  # noqa: C901
             no_answer_check()
 
     def even_or_odd():
-        question1()
-        question2()
-        question3()
+        question1(number1)
+        question2(number2)
+        question3(number3)
         print('Congratulations, ', name + '!')
 
     even_or_odd()
