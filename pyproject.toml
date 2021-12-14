@@ -1,9 +1,9 @@
 [tool.poetry]
 name = "hexlet-code"
 version = "0.1.0"
-description = "This is first project on Hexlet. It includes 5 games: brain-even, brain-calc, brain-gcd, brain-progression, brain-prime"
+description = ""
 authors = ["nerooren <nerooren4001@gmail.com>"]
-repository = "https://github.com/mbgoodguy/python-project-lvl1"
+repository = ""
 packages = [
   { include = "brain_games" },
 ]
