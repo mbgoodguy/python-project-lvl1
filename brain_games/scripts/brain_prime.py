@@ -44,6 +44,7 @@ def get_answer():
 
 def congratulate_user(name):
     print(f'Congratulations, {name}!')
+    sys.exit()
 
 
 def main():
