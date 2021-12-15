@@ -12,7 +12,7 @@ def ask_name():
 
 
 def greet_user(name):
-    print('Hello, ', name + '!')
+    print('Hello,', name + '!')
     print('Answer "yes" if given number is prime. Otherwise answer "no".')
 
 
@@ -63,14 +63,14 @@ def main():
                 print('Correct!')
             else:
                 print('\'yes\' is wrong answer ;(. Correct answer was \'no\'')  # noqa: E501
-                print('Let''s try again, ', user_name + '!')
+                print(f'Let\'s try again, {user_name}!')
                 sys.exit()
         else:
             if is_prime is False:
                 print('Correct!')
             else:
                 print('\'no\' is wrong answer ;(. Correct answer was \'yes\'')  # noqa: E501
-                print('Let''s try again, ', user_name + '!')
+                print(f'Let\'s try again, {user_name}!')
                 sys.exit()
         i += 1
     congratulate_user(user_name)

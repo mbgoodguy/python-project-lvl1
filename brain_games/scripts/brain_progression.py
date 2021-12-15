@@ -10,8 +10,7 @@ i = 10
 def main():  # noqa: C901
     print('Welcome to the Brain Games!')
     name = input('May I have your name? ')
-    print('Hello, ', name + '!')
-    print('What number is missing in the progression?')
+    print('Hello,', name + '!')
     # question defs
 
     def question1():
@@ -27,11 +26,11 @@ def main():  # noqa: C901
             # print('Индекс случайно выбранного элемента в списке: ', element_index)   # noqa: E501
             a[element_index] = unknown_number
             # print(a)
-        print('Question: ', " ".join(map(str,a)))
+        print('Question:', " ".join(map(str, a)))
         answer = int(input('Your answer: '))
         if answer != element:
             print(f'{answer} is wrong answer ;(. Correct answer was {element}')  # noqa: E501
-            print('Let''s try again, ', name + '!')
+            print(f'Let\'s try again, {name}!')
             sys.exit()
         else:
             print('Correct!')
@@ -48,11 +47,11 @@ def main():  # noqa: C901
         if element in a:
             element_index = a.index(element)
             a[element_index] = unknown_number
-        print('Question: ', " ".join(map(str,a)))
+        print('Question:', " ".join(map(str, a)))
         answer = int(input('Your answer: '))
         if answer != element:
             print(f'{answer} is wrong answer ;(. Correct answer was {element}')  # noqa: E501
-            print('Let''s try again, ', name + '!')
+            print(f'Let\'s try again, {name}!')
             sys.exit()
         else:
             print('Correct!')
@@ -71,11 +70,11 @@ def main():  # noqa: C901
             # print('Индекс случайно выбранного элемента в списке: ', element_index)   # noqa: E501
             a[element_index] = unknown_number
             # print(a)
-        print('Question: ', " ".join(map(str,a)))
+        print('Question:', " ".join(map(str, a)))
         answer = int(input('Your answer: '))
         if answer != element:
             print(f'{answer} is wrong answer ;(. Correct answer was {element}')  # noqa: E501
-            print('Let''s try again, ', name + '!')
+            print(f'Let\'s try again, {name}!')
             sys.exit()
         else:
             print('Correct!')
@@ -84,7 +83,7 @@ def main():  # noqa: C901
         question1()
         question2()
         question3()
-        print('Congratulations, ', name + '!')
+        print(f'Congratulations, {name}!')
 
     progression()
     sys.exit()

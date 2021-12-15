@@ -7,7 +7,7 @@ import sys
 def main():  # noqa: C901
     print('Welcome to the Brain Games!')
     name = input('May I have your name? ')
-    print('Hello, ', name + '!')
+    print('Hello,', name + '!')
     print('Find the greatest common divisor of given numbers.')
 
     # question defs
@@ -26,7 +26,7 @@ def main():  # noqa: C901
 
         if answer != number1:
             print(f'{answer} is wrong answer ;(. Correct answer was {number1}')  # noqa: E501
-            print('Let''s try again, ', name + '!')
+            print(f'Let\'s try again, {name}!')
             sys.exit()
         else:
             print('Correct!')
@@ -35,7 +35,7 @@ def main():  # noqa: C901
         question()
         question()
         question()
-        print('Congratulations, ', name + '!')
+        print('Congratulations,', name + '!')
 
     gcd()
     sys.exit()
