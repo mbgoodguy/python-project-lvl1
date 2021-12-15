@@ -35,7 +35,7 @@ def main():  # noqa: C901
         question()
         question()
         question()
-        print('Congratulations, ', name + '!')
+        print('Congratulations,', name + '!')
 
     gcd()
     sys.exit()
