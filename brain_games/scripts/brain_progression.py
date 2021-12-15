@@ -26,7 +26,7 @@ def main():  # noqa: C901
             # print('Индекс случайно выбранного элемента в списке: ', element_index)   # noqa: E501
             a[element_index] = unknown_number
             # print(a)
-        print('Question:', " ".join(map(str,a)))
+        print('Question:', " ".join(map(str, a)))
         answer = int(input('Your answer: '))
         if answer != element:
             print(f'{answer} is wrong answer ;(. Correct answer was {element}')  # noqa: E501
@@ -47,7 +47,7 @@ def main():  # noqa: C901
         if element in a:
             element_index = a.index(element)
             a[element_index] = unknown_number
-        print('Question:', " ".join(map(str,a)))
+        print('Question:', " ".join(map(str, a)))
         answer = int(input('Your answer: '))
         if answer != element:
             print(f'{answer} is wrong answer ;(. Correct answer was {element}')  # noqa: E501
@@ -70,7 +70,7 @@ def main():  # noqa: C901
             # print('Индекс случайно выбранного элемента в списке: ', element_index)   # noqa: E501
             a[element_index] = unknown_number
             # print(a)
-        print('Question:', " ".join(map(str,a)))
+        print('Question:', " ".join(map(str, a)))
         answer = int(input('Your answer: '))
         if answer != element:
             print(f'{answer} is wrong answer ;(. Correct answer was {element}')  # noqa: E501
