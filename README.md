@@ -5,12 +5,7 @@
 
 ![example workflow](https://github.com/mbgoodguy/python-project-lvl1/actions/workflows/flake8.yml/badge.svg)
 
-Even-or-odd: https://asciinema.org/a/UmxlAMPKJpWtDMB84kDgD7cs9
+Even-or-odd: 
 
-Brain-calculate: https://asciinema.org/a/ISkgY6EmpCpGQRCdRTZ0yd17U
+[![asciicast](https://asciinema.org/a/DFzQqo8HdRbybyjhbNbNyO27M.svg)](https://asciinema.org/a/DFzQqo8HdRbybyjhbNbNyO27M?speed=2)
 
-Brain-GCD: https://asciinema.org/a/lFlN6ooC6GaQChldmBeVXMpad
-
-Brain-progression: https://asciinema.org/a/uRsWvfBZstGwhPIoVS5vgppBu
-
-Brain-prime: https://asciinema.org/a/uWtlen47DsZJcNHjaiG3gnByg
