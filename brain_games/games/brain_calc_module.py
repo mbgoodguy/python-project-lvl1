@@ -19,3 +19,4 @@ def generate_round():
     question = f"{random_number1} {random_operation} {random_number2}"
     answer = answer_check(random_number1, random_operation, random_number2)  # noqa: E501
     return question, str(answer)
+
