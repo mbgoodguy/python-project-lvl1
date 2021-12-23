@@ -1,20 +1,13 @@
-import random
-
-TASK = 'Find the greatest common divisor of given numbers.'
+#!usr/bin/env python3
 
 
-def generate_round():
-    number1 = random.randint(1, 50)
-    number2 = random.randint(1, 50)
-    answer = gcd(number1, number2)  # в функцию gcd подставляем аргументы из функции begin_round()   # noqa: E501
-    question = f'{number1} {number2}'
-    return question, str(answer)
+from brain_games.engine import start_game
+from brain_games.games import brain_gcd_module
 
 
-def gcd(number1, number2):
-    while number1 != 0 and number2 != 0:
-        if number1 > number2:
-            number1 = number1 % number2
-        else:
-            number2 = number2 % number1
-    return number1 + number2
+def main():
+    start_game(brain_gcd_module)  # аргумент - импортированный соответствующий модуль игры  # noqa: E501
+
+
+if __name__ == '__main__':
+    main()

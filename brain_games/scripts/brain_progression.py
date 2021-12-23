@@ -7,5 +7,5 @@ def main():
     start_game(brain_progression_module)  # аргумент - импортированный соответствующий модуль игры  # noqa: E501
 
 
-if __name__ == '__ main__':
+if __name__ == '__main__':
     main()
