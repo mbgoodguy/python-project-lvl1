@@ -5,7 +5,17 @@
 
 ![example workflow](https://github.com/mbgoodguy/python-project-lvl1/actions/workflows/flake8.yml/badge.svg)
 
-Even-or-odd: 
+Example of "Even-or-odd " game:
 
-[![asciicast](https://asciinema.org/a/DFzQqo8HdRbybyjhbNbNyO27M.svg)](https://asciinema.org/a/DFzQqo8HdRbybyjhbNbNyO27M?speed=2)
+[![asciicast](https://asciinema.org/a/458264.svg)](https://asciinema.org/a/458264?speed=2)
+
+Example of "Brain-calc" game:
+
+[![asciicast](https://asciinema.org/a/458265.svg)](https://asciinema.org/a/458265?speed=2)
+
+Example of "Brain-calc" game:
+
+[![asciicast](https://asciinema.org/a/458265.svg)](https://asciinema.org/a/458265?speed=2)
+
+
 
