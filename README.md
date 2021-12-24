@@ -13,9 +13,12 @@ Example of "Brain-calc" game:
 
 [![asciicast](https://asciinema.org/a/458265.svg)](https://asciinema.org/a/458265?speed=2)
 
-Example of "Brain-calc" game:
+Example of "Brain-gcd" game:
 
-[![asciicast](https://asciinema.org/a/458265.svg)](https://asciinema.org/a/458265?speed=2)
+[![asciicast](https://asciinema.org/a/458268.svg)](https://asciinema.org/a/458268?speed=2)
 
+Example of "Brain-progression" game:
+
+[![asciicast](https://asciinema.org/a/458270.svg)](https://asciinema.org/a/458270?speed=2)
 
 
