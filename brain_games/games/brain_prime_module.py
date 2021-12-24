@@ -3,17 +3,21 @@ TASK = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(num):
-    for i in range(2, num // 2 + 1):
-        if (num % i == 0):
-            # print(" # Число не является простым")
+    divisor = 2
+    if num <= 1:
+        return False
+    while divisor <= num / 2:
+        if num % divisor == 0:
             return False
-        # print(" # Число не является простым")
-        return True
+            break
+        else:
+            divisor += 1
+    return True
 
 
 def generate_round():
-    num = random.randint(2, 30)
-    if is_prime(num) is True:
+    num = random.randint(1, 13)
+    if is_prime(num):
         return str(num), 'yes'  # возврат числа (question) и ответа (answer), которые будут использованы в engine.py   # noqa: E501
     else:
         return str(num), 'no'
