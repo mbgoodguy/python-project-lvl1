@@ -5,6 +5,13 @@
 
 ![example workflow](https://github.com/mbgoodguy/python-project-lvl1/actions/workflows/flake8.yml/badge.svg)
 
+Hello! This is my first project on Hexlet. It consists of 5 small arithmetic games:
+- Parity check
+- Calculator
+- GCD (Greatest Common Divisor)
+- Arithmetic progression
+- Is it a prime number
+
 Example of "Even-or-odd " game:
 
 [![asciicast](https://asciinema.org/a/458264.svg)](https://asciinema.org/a/458264?speed=2)
@@ -21,4 +28,6 @@ Example of "Brain-progression" game:
 
 [![asciicast](https://asciinema.org/a/458270.svg)](https://asciinema.org/a/458270?speed=2)
 
+Example of "Brain-prime" game:
 
+[![asciicast](https://asciinema.org/a/458271.svg)](https://asciinema.org/a/458271?speed=2)
