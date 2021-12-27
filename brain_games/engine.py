@@ -2,7 +2,7 @@ import prompt
 ROUNDS = 3
 
 
-def start_game(game):  # в качестве аргумента выступают имена игровых модулей в скриптах, например brain_prime_module  # noqa: E501
+def start_game(game):
     print("Welcome to The Brain Games!")
     name = prompt.string('May I have your name? ')
     print(f"Hello, {name}!")
@@ -10,7 +10,7 @@ def start_game(game):  # в качестве аргумента выступаю
     start_from_round = 1
 
     for start_from_round in range(ROUNDS):
-        question, answer = game.generate_round()  # получение значений из модуля игры  # noqa: E501
+        question, answer = game.generate_round()
         print("Question: " + question)
         user_answer = prompt.string('Your answer: ')
         if user_answer == answer:
