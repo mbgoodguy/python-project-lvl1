@@ -1,5 +1,4 @@
 import prompt
-import sys
 ROUNDS = 3
 
 
@@ -19,5 +18,5 @@ def start_game(game):  # в качестве аргумента выступаю
         else:
             print(f"{user_answer} is wrong answer ;(. Correct answer was {answer}")  # noqa: E501
             print(f"Let's try again, {name}!")
-            sys.exit()
+            return
     print(f'Congratulations, {name}!')
