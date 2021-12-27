@@ -10,7 +10,7 @@ def start_game(game):  # в качестве аргумента выступаю
     print(game.TASK)
     start_from_round = 1
 
-    while start_from_round <= ROUNDS:
+    for start_from_round in range(ROUNDS):
         question, answer = game.generate_round()  # получение значений из модуля игры  # noqa: E501
         print("Question: " + question)
         user_answer = prompt.string('Your answer: ')
@@ -20,5 +20,4 @@ def start_game(game):  # в качестве аргумента выступаю
             print(f"{user_answer} is wrong answer ;(. Correct answer was {answer}")  # noqa: E501
             print(f"Let's try again, {name}!")
             sys.exit()
-        start_from_round += 1
     print(f'Congratulations, {name}!')
