@@ -11,12 +11,12 @@ def start_game(game):
 
     for start_from_round in range(ROUNDS):
         question, answer = game.generate_round()
-        print("Question:" + question)
+        print(f'Question: {str(question)}')
         user_answer = prompt.string('Your answer: ')
-        if user_answer == answer:
+        if str(user_answer) == str(answer):
             print('Correct!')
         else:
-            print(f"{user_answer} is wrong answer ;(. Correct answer was {answer}")  # noqa: E501
+            print(f"{str(user_answer)} is wrong answer ;(. Correct answer was {str(answer)}")  # noqa: E501
             print(f"Let's try again, {name}!")
             return
     print(f'Congratulations, {name}!')

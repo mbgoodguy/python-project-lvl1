@@ -2,24 +2,23 @@ import random
 TASK = 'What number is missing in the progression?'
 
 
-def generate_progression(number1, step, length_of_progression):
-    return [number1 + step * i for i in range(length_of_progression)]
+def get_progression(start_number, step, length_of_progression):
+    result = [start_number]
+    x = 0
+    while x < length_of_progression:
+        start_number += step
+        result.append(start_number)
+        x = x + 1
+    return result
 
 
 def generate_round():
-    start = 1
-    end = 50
-    step = random.randint(4, 8)
-    length_of_progression = 10
-    question = ''
-    number1 = random.randint(start, end)
-    hidden_element_index = random.randint(1, length_of_progression)
-    progression = generate_progression(number1, step, length_of_progression)
-    for i in range(len(progression)):
-        if i == hidden_element_index - 1:
-            question += ' ..'
-            result = str(progression[i])
-        else:
-            question += ''.join(' ' + str(progression[i]))
-    print(f'{question}, {result}')
-    return question, result
+    start_number = random.randint(1, 50)
+    step = random.randint(1, 10)
+    length_of_progression = random.randint(6, 9)
+    progression = get_progression(start_number, step, length_of_progression)
+    index = random.randint(0, length_of_progression)
+    answer = progression[index]
+    progression[index] = '..'
+    question = ' '.join(map(str, progression))
+    return question, answer
