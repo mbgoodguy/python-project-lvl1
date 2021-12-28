@@ -18,6 +18,5 @@ def is_prime(num):
 def generate_round():
     num = random.randint(1, 13)
     if is_prime(num):
-        return str(num), 'yes'  # возврат числа (question) и ответа (answer), которые будут использованы в engine.py   # noqa: E501
-    else:
+        return str(num), 'yes'
         return str(num), 'no'

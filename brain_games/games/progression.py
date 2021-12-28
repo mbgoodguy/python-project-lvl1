@@ -9,19 +9,16 @@ def generate_progression(number1, step, length_of_progression):
 def generate_round():
     start = 1
     end = 50
-    step = random.randint(1, 8)
+    step = random.randint(4, 8)
     length_of_progression = 10
     question = ''
     number1 = random.randint(start, end)
-    index = random.randint(1, length_of_progression)
-    # print('Случ-ый индекс: ', index - 1)
+    hidden_element_index = random.randint(1, length_of_progression)
     progression = generate_progression(number1, step, length_of_progression)
-    # print(progression)
     for i in range(len(progression)):
-        if i == index - 1:
-            question += '.. '
+        if i == hidden_element_index - 1:
+            question += ' ..'
             result = str(progression[i])
         else:
-            question += str(progression[i]) + ' '
-    # print(f'Question: {question}, Result: {result}')
+            question += ''.join(' ' + str(progression[i]))
     return question, result
