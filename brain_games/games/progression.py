@@ -21,4 +21,5 @@ def generate_round():
             result = str(progression[i])
         else:
             question += ''.join(' ' + str(progression[i]))
+    print(f'{question}, {result}')
     return question, result
