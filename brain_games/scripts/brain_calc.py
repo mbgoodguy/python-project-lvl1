@@ -6,7 +6,7 @@ from brain_games.games import calс
 
 
 def main():
-    start_game(calс)  # аргумент - импортированный соответствующий модуль игры  # noqa: E501
+    start_game(calс)
 
 
 if __name__ == '__main__':
