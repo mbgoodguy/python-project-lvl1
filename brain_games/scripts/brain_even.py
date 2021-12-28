@@ -6,7 +6,7 @@ from brain_games.games import even_or_odd
 
 
 def main():
-    start_game(even_or_odd)  # аргумент - импортированный соответствующий модуль игры  # noqa: E501
+    start_game(even_or_odd)
 
 
 if __name__ == '__main__':
