@@ -63,7 +63,7 @@ def play_together(game):
     p1_points = points_system(player1_data)  # save points
 
     if player1_data.get('attempts') == 0 and player2_data.get('attempts') == 0:
-        print(f'VOT ETO VY CHUDIKI!!! >_<')
+        print('VOT ETO VY CHUDIKI!!! XD')
 
     return [p1_points, p2_points]
 
@@ -81,10 +81,10 @@ def time_formatting(player):
 
 def is_no_attempts(attempts):
     if attempts == 0:
-        print(f'You have no more attempts! Game is finished for you!')
+        print('You have no more attempts! Game is finished for you!')
         return True
     else:
-        print(f'You have {attempts} attempts!')
+        print('You have {attempts} attempts!')
         return False
 
 
