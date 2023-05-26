@@ -1,28 +1,32 @@
 import prompt
 import datetime
-from brain_games.scripts import greeting_logic
+from .scripts import greeting_logic
+from .games import greet
 ROUNDS = 5
 
 
 def start_game(game):
-    players = greeting_logic.get_players()
+    greeting_logic.main()
+    players = greet.get_players()
 
     if players == 1:
-        return play_solo(game)
+        solo_data = play_solo(game)
+        print(f'Your pts: {solo_data.get("points")}')
     else:
-        return play_together(game)
+        together_data = play_together(game)
+        print(f'P1 pts: {together_data["p1_points"]}')
+        print(f'P2 pts: {together_data["p2_points"]}')
 
 
 def play_solo(game):
     name = prompt.string('Enter your name: ')
-    start_from_round = 1
     points = 0  # for point system calculate
     attempts = 3
     print(f"Good luck, {name}! Timer started!")
     print(game.TASK)
     start_time = datetime.datetime.now()
 
-    for start_from_round in range(ROUNDS):
+    for _ in range(ROUNDS):
         question, answer = game.generate_round()
         print(f'New question: {str(question)}')
         user_answer = prompt.string('Your answer: ')
@@ -59,20 +63,23 @@ def play_together(game):
     player1_data = play_solo(game)
     print('NOW THE NEXT PLAYER!')
     player2_data = play_solo(game)
-    p2_points = points_system(player2_data)  # save points
-    p1_points = points_system(player1_data)  # save points
+    p2_points = get_pts(player2_data)  # save points
+    p1_points = get_pts(player1_data)  # save points
 
     if player1_data.get('attempts') == 0 and player2_data.get('attempts') == 0:
         print('VOT ETO VY CHUDIKI!!! XD')
-
-    return [p1_points, p2_points]
+    sum_points = {
+        'p1_points': p1_points,
+        'p2_points': p2_points,
+    }
+    return sum_points
 
 
 def time_comparsion(player1, player2):
     if player1.get('time') < player1.get('time'):
-        print(f'Player {player2.get("name")} is WINNER!')
+        print(f'Player {player2.get("name")} was faster!')
     else:
-        print(f'Player {player1.get("name")} is WINNER!')
+        print(f'Player {player1.get("name")} was faster!')
 
 
 def time_formatting(player):
@@ -98,7 +105,7 @@ def time_calculate(start_time):
     return time_result
 
 
-def points_system(player_data):
+def get_pts(player_data):
     return player_data.get('points')
 
 

@@ -1,6 +1,9 @@
 install:
 	poetry install
 
+without-build:
+	python3 -m pip install .
+
 build:
 	poetry build
 
@@ -19,7 +22,7 @@ to-greet:
 
 play:
 	to-greet
-	brain-even
+	brain-calc
 
 brain-even:
 	poetry run brain-even
