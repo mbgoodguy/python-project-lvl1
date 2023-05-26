@@ -14,8 +14,12 @@ build-install:
 	poetry build
 	python3 -m pip install --user --force-reinstall dist/*.whl
 
-brain-games:
-	poetry run brain-games
+to-greet:
+	poetry run to-greet
+
+play:
+	to-greet
+	brain-even
 
 brain-even:
 	poetry run brain-even

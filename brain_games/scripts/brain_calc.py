@@ -1,12 +1,13 @@
 #!/usr/bin/env python
 
 
-from brain_games.engine import start_game
+from brain_games.engine import start_game, play_solo
 from brain_games.games import calс
 
 
 def main():
     start_game(calс)
+    # print(start_game(calс))
 
 
 if __name__ == '__main__':
