@@ -22,7 +22,7 @@ to-greet:
 
 play:
 	to-greet
-	brain-calc
+
 
 brain-even:
 	poetry run brain-even
@@ -41,3 +41,6 @@ brain-progression:
 
 brain-prime:
 	poetry run brain-prime
+
+pts-count:
+	poetry run pts-count
