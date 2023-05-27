@@ -4,25 +4,16 @@ install:
 without-build:
 	python3 -m pip install .
 
-build:
-	poetry build
-
-publish:
-	poetry publish --dry-run
-
 package-install:
 	python3 -m pip install --user --force-reinstall dist/*.whl
 
-build-install:
+build:
 	poetry build
-	python3 -m pip install --user --force-reinstall dist/*.whl
+	make package-install
+	poetry update
 
-to-greet:
-	poetry run to-greet
-
-play:
-	to-greet
-
+publish:
+	poetry publish --dry-run
 
 brain-even:
 	poetry run brain-even
@@ -42,5 +33,5 @@ brain-progression:
 brain-prime:
 	poetry run brain-prime
 
-pts-count:
-	poetry run pts-count
+play:
+	poetry run play
