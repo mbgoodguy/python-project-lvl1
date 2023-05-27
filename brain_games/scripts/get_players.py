@@ -15,7 +15,7 @@ def get_players_info():
         print("TARGET: score more points than the other player!")
         p1_name = input('Enter Player1 name: ')
         p2_name = input('Enter Player2 name: ')
-        print(f'{p1_name} starts first!')
+        print(f'{p1_name} starts first! Every game he will start first!')
         return [2, p1_name, p2_name]
 
 

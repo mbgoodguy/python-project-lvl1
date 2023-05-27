@@ -7,7 +7,6 @@ def play_together(game_module):
     print('NOW THE NEXT PLAYER!')
     p2 = play_solo(game_module)
     results_from_together = {'player1_data': p1, 'player2_data': p2}
-    # print(f'Данные игроков: {results_from_together}')
     return results_from_together
 
 
@@ -26,20 +25,19 @@ def play_solo(game_module):
             print('Correct!')
             points += 1
         else:
-            attempts -= 1
+            # attempts -= 1
             print(f"{str(user_answer)} is wrong answer ;(. Correct answer was {str(answer)}")
-            print('ATTEMPTS LEFT: ', attempts)
+            # print('ATTEMPTS LEFT: ', attempts)
 
-            if attempts == 0:
-                print('You have no more attempts! Game is finished for you!')
-                solo_result = {
-                    'attempts': attempts,
-                    'points': points
-                }
-                return solo_result
+            # if attempts == 0:
+            #     print('You have no more attempts! Game is finished for you!')
+            #     solo_result = {
+            #         'attempts': attempts,
+            #         'points': points
+            #     }
+            #     return solo_result
 
     solo_result = {
-        'attempts': attempts,
         'points': points,
     }
 

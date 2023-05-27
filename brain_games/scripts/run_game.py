@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 from brain_games.engine import play_solo, play_together
-from brain_games.games import calс, even_or_odd, gcd  # add games which u want to play
+from brain_games.games import calс, even_or_odd, gcd, prime, progression # add games which u want to play
 from brain_games.scripts import get_players
 
 
@@ -12,6 +12,8 @@ def main():
             'calc': play_solo(calс)['points'],
             'even_or_odd': play_solo(even_or_odd)['points'],
             'gcd': play_solo(gcd)['points'],
+            'prime': play_solo(prime)['points'],
+            'progression': play_solo(progression)['points'],
         }
         result = sum(points.values())
         print(f'Finally you reached {result} points!!!')
@@ -23,6 +25,8 @@ def main():
             'calc': play_together(calс),
             'even_or_odd': play_together(even_or_odd),
             'gcd': play_together(gcd),
+            'prime': play_together(prime),
+            'progression': play_together(progression),
             'p1_name': p1_name,
             'p2_name': p2_name,
         }
@@ -33,25 +37,33 @@ def main():
         p1_summary_points = (
                 results['calc']['player1_data']['points'] +
                 results['even_or_odd']['player1_data']['points'] +
-                results['gcd']['player1_data']['points']
+                results['gcd']['player1_data']['points'] +
+                results['prime']['player1_data']['points'] +
+                results['progression']['player1_data']['points']
         )
 
         p2_summary_points = (
                 results['calc']['player2_data']['points'] +
                 results['even_or_odd']['player2_data']['points'] +
-                results['gcd']['player2_data']['points']
+                results['gcd']['player2_data']['points'] +
+                results['prime']['player2_data']['points'] +
+                results['progression']['player2_data']['points']
         )
 
         print(f"Summary for ({results['p1_name']}) player:\n"
               f"Points in 'calc' game: {results['calc']['player1_data']['points']}\n"
               f"Points in 'even_or_odd' game: {results['even_or_odd']['player1_data']['points']}\n"
               f"Points in 'gcd' game: {results['gcd']['player1_data']['points']}\n"
+              f"Points in 'prime' game: {results['prime']['player1_data']['points']}\n"
+              f"Points in 'progression' game: {results['progression']['player1_data']['points']}\n"
               )
 
         print(f"Summary for ({results['p2_name']}) player:\n"
               f"Points in 'calc' game: {results['calc']['player2_data']['points']}\n"
               f"Points in 'even_or_odd' game: {results['even_or_odd']['player2_data']['points']}\n"
               f"Points in 'gcd' game: {results['gcd']['player2_data']['points']}\n"
+              f"Points in 'prime' game: {results['prime']['player2_data']['points']}\n"
+              f"Points in 'progression' game: {results['progression']['player2_data']['points']}\n"
               )
 
         print(f'{results["p1_name"]} points in games: {p1_summary_points}')
