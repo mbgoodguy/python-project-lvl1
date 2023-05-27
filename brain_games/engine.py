@@ -1,4 +1,3 @@
-from .scripts import get_players
 import prompt
 ROUNDS = 3
 
