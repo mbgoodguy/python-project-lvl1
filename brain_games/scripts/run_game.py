@@ -28,14 +28,19 @@ def main():
         }
 
         print(results)
-        
-        p1_summary_points = (results['calc']['player1_data']['points'] +
-                             results['even_or_odd']['player1_data']['points'] +
-                             results['gcd']['player1_data']['points'])
 
-        p2_summary_points = (results['calc']['player2_data']['points'] +
-                             results['even_or_odd']['player2_data']['points'] +
-                             results['gcd']['player2_data']['points'])
+        # flake8: noqa W503
+        p1_summary_points = (
+                results['calc']['player1_data']['points'] +
+                results['even_or_odd']['player1_data']['points'] +
+                results['gcd']['player1_data']['points']
+        )
+
+        p2_summary_points = (
+                results['calc']['player2_data']['points'] +
+                results['even_or_odd']['player2_data']['points'] +
+                results['gcd']['player2_data']['points']
+        )
 
         print(f"Summary for ({results['p1_name']}) player:\n"
               f"Points in 'calc' game: {results['calc']['player1_data']['points']}\n"
@@ -51,7 +56,7 @@ def main():
 
         print(f'{results["p1_name"]} points in games: {p1_summary_points}')
         print(f'{results["p2_name"]} points in games: {p2_summary_points}')
-        
+
         if p1_summary_points > p2_summary_points:
             print(f'{results["p1_name"]} is WINNER!')
         else:
